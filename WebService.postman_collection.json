@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "1e4564da-ed58-451b-a6bf-c572856db319",
+		"name": "WebService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20766705"
+	},
+	"item": [
+		{
+			"name": "Task1_Service1_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5011/user",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5011",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task1_Service2_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"padawan\", \"spec\": \"QA\", \"ex\": \"1\", \"current_user\": {\"uid\":3, \"uip:\": \"0.0.0.0\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5012/users_team",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5012",
+					"path": [
+						"users_team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task2_Service1_get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5021/jobs",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5021",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task2_Service1_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"job_id\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5021/jobs",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5021",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task2_Service2_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"job_id\": 6, \"j_data\":{\r\n    \"1\": {\"firm_title\": \"Cognizant Technology Solutions\",\r\n           \"position_title\": \"QA Functional Tester\",\r\n           \"skills\": [\"postman\", \"js\", \"client_server\", \"api_testing\"],\r\n           \"description\": \"Experience with Functional Testing, including Regression Testing, Integration Testing, and API Testing. Experience with creating and executing test scripts. Experience testing developments against wireframes and style guide. Experience with systems, integration, and user acceptance testing. Experience in working with offshore /onsite Model\",\r\n           \"Job Posting\": \"Aug 02 2022\",\r\n           \"Employee Status\":\"Full-time\"\r\n         },\r\n    \"2\": {\"firm_title\": \"The County of Santa Clara - Assessor\",\r\n          \"position_title\": \"Test Engineer\",\r\n          \"skills\": [\"DBAs\", \"Load test\", \"test plans\"],\r\n          \"description\": \"Under supervision, to monitor and evaluate testing results against predetermined objectives and apply recommended actions for improvements; to perform the design, development, execution and reporting efforts for projects using a single software testing technology competency (i.e., functional, systems, automation, performance, data accuracy, etc.) within a Waterfall and/or Agile software development process.\",\r\n          \"Job Posting\": \"Nov 10 2022\",\r\n          \"Employee Status\": \"Full-time\"\r\n         },\r\n    \"3\": {\"firm_title\": \"Jade Global\",\r\n          \"position_title\": \"Jr. QA\",\r\n          \"skills\": [\"functional testing\", \"user acceptance testing\", \"requirements documentation testing\"],\r\n          \"description\": \"Working closely with the business functions such as Quality and Regulatory Affairs to create ongoing enhancements and capabilities. Participating in deployment projects as a QA – including but not limited to requirements analysis, requirements documentation, and the creation and execution of test scripts.\",\r\n          \"Job Posting\": \"Nov 30 2022\",\r\n          \"Employee Status\": \"Full-time\"\r\n         },\r\n    \"4\": {\"firm_title\": \"LOCKHEED MARTIN CORPORATION\",\r\n          \"position_title\": \"Test Engineer\",\r\n          \"skills\": [\"Python Scripting Experience\", \"functionality test\", \"verbal communication skills\", \" strong social skills\", \"Familiarity with Git\"],\r\n          \"description\": \"We are seeking a System Integration and Test Engineer to be responsible for development and maintenance of test scripts to be used during all satellite test phases. You should understand principles and disciplines such as policy, procedures, process discipline, operations, safety, and command media to perform job duties of Space Vehicle Test Engineering.\",\r\n          \"Job Posting\": \"Nov 22 2022\",\r\n          \"Employee Status\": \"Full-time\"\r\n         },\r\n    \"5\": {\"firm_title\": \"Apple\",\r\n          \"position_title\": \"Wireless Bluetooth QA Engineer\",\r\n          \"skills\": [\"Excellent written and verbal skills\", \"Excellent teammate \", \"Bluetooth testing\"],\r\n          \"description\": \"The Bluetooth Quality team is looking for a motivated, highly-technical Bluetooth Quality Engineer with an ability to seek solutions to unusual problems with valued interpersonal skills. You will be responsible for ensuring the best customer experience and quality of Bluetooth in the latest Apple products.\",\r\n          \"Job Posting\": \"Oct 14, 2022\",\r\n          \"Employee Status\": \"Full-time\"\r\n         },\r\n    \"6\": {\"firm_title\": \"Banyan Data Services\",\r\n          \"position_title\": \"Quality Assurance Engineer\",\r\n          \"skills\": [\"API Testing\", \"Mobile testing\", \"Appium\", \"Selenium\"],\r\n          \"description\": \"We are looking for a Quality Assurance (QA) engineer to develop and execute exploratory and automated tests to ensure product quality. QA engineer responsibilities include designing and implementing tests, debugging and defining corrective actions. You will also review system requirements and track quality assurance metrics.\",\r\n          \"Job Posting\": \"Nov 15 2022\",\r\n          \"Employee Status\": \"Full-time\"\r\n         },\r\n    \"7\": {\"firm_title\": \"Tek Ninjas\",\r\n          \"position_title\": \"QA Engineer\",\r\n          \"skills\": [\"Java\"],\r\n          \"description\": \"Focusing on web automation the team is primarily looking for people who experience in UI and API testing. Will need to have experience with Postman, Java, Selenium, TestNG and Cucumber. Develop, modify, automate and execute automated test scripts for various business scenarios in collaboration with Developers, Tech Leads and product partners. Keep up with close to 100% automation coverage for the teams. Improve areas where there are gap in automation coverage.\",\r\n          \"Job Posting\": \"Nov 29 2022\",\r\n          \"Employee Status\": \" Full-time\"\r\n         }\r\n}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5022/get_job",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5022",
+					"path": [
+						"get_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task3_Service1_jobs_count",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5031/jobs_count",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"jobs_count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task3_Service2_get_jobs_count",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5032/get_jobs_count",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5032",
+					"path": [
+						"get_jobs_count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task3_Service1_all_jobs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5031/all_jobs",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"all_jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task3_Service1_add_job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Employee Status\": \"Full-time\",\r\n        \"Job Posting\": \"Nov 30 2022\",\r\n        \"description\": \"Working closely with the business functions such as Quality and Regulatory Affairs to create ongoing enhancements and capabilities. Participating in deployment projects as a QA – including but not limited to requirements analysis, requirements documentation, and the creation and execution of test scripts.\",\r\n        \"firm_title\": \"Jade Global\",\r\n        \"position_title\": \"Jr. QA\",\r\n        \"skills\": [\r\n            \"functional testing\",\r\n            \"user acceptance testing\",\r\n            \"requirements documentation testing\"\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5031/add_job",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"add_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task3_Service2_add_job_item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"firm_title\":\"Horns and hooves\",\r\n\"position_title\": \"sit chair\",\r\n\"skills\": [\"anwser the questions\"],\r\n\"description\": \"Nice job\",\r\n\"Job Posting\": \"04-12-2022\",\r\n\"Employee Status\": \"full time\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5032/add_job_item",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5032",
+					"path": [
+						"add_job_item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task3_Service2_all_jobs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5032/all_jobs",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5032",
+					"path": [
+						"all_jobs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

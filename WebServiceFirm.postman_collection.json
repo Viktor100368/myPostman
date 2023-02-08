@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "606d887f-4fac-4ff5-a00c-0ac9c7035e44",
+		"name": "WebServiceFirm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20766705"
+	},
+	"item": [
+		{
+			"name": "get_departments_41",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://23.88.52.139:5041/get_departments",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5041",
+					"path": [
+						"get_departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all_jobs_41",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://23.88.52.139:5041/all_jobs",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5041",
+					"path": [
+						"all_jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_skills_41",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://23.88.52.139:5041/get_skills",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5041",
+					"path": [
+						"get_skills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_positions_41",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://23.88.52.139:5041/get_positions",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5041",
+					"path": [
+						"get_positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_job_41",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"department\":3,\r\n    \"position\":2,\r\n    \"skills\":[1,4,6]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5041/create_job",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5041",
+					"path": [
+						"create_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "department_config_45",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"department_id\":3   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5045/department_config",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5045",
+					"path": [
+						"department_config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "positon_config_44",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"position_id\":3   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5044/position_config",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5044",
+					"path": [
+						"position_config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "skill_config_43",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"skill_ids\":[3,5,6,7]   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5043/skill_config",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5043",
+					"path": [
+						"skill_config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_job_position_42",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"department\":2,\r\n    \"skills\":[3,5,6,7],\r\n    \"position\":5   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5042/create_job_position",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5042",
+					"path": [
+						"create_job_position"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
